@@ -796,7 +796,7 @@ layers:
             polygons:
                 order: global.feature_order
                 visible: false
-        # tier1:
+        tier1:
         national_park:
             filter:
                 all:
@@ -923,7 +923,7 @@ layers:
             polygons:
                 visible: false
                 order: global.order
-                color: [0.800,0.800,0.800]
+                color: [1.000,1.000,1.000]
             lines:
                 visible: false
                 order: global.order_add_1
@@ -1120,7 +1120,7 @@ styles:
         shaders:
             uniforms:
                 u_customtexture: images/building-dots2.jpg
-                u_scale: 1
+                u_scale: 0.5
 
     water-dots:
         base: polygons
@@ -1128,7 +1128,7 @@ styles:
         shaders:
             uniforms:
                 u_customtexture: images/water-dots1.jpg
-                u_scale: 1
+                u_scale: 0.35
 
     conservation:
         base: polygons
@@ -1308,7 +1308,7 @@ styles:
                     - images/forest2.jpg
                     - images/forest1.jpg
                 u_zoom_fade: [12.5, 13] # zooms to start/stop cross-fade
-                u_scale: 1. # number of times to repeat texture in a tile
+                u_scale: 0.5 # number of times to repeat texture in a tile
                 # u_light: [-0.5, 0.5, -0.5] # lights are flipped to match sat hillshade
                 # u_light: [0.000, -0.320, -0.725] # lights are flipped to match sat hillshade
                 u_light: [-0.375, 0.000, -0.530] # lights are flipped to match sat hillshade
@@ -1375,7 +1375,7 @@ styles:
                     # - images/earth-dots8.jpg
                     # - images/earth-dots9.jpg
                 u_zoom_fade: [12.5, 13] # zooms to start/stop cross-fade
-                u_scale: 1. # number of times to repeat texture in a tile
+                u_scale: 0.75 # number of times to repeat texture in a tile
                 # u_light: [-0.5, 0.5, -0.5] # lights are flipped to match sat hillshade
                 # u_light: [0.000, -0.320, -0.725] # lights are flipped to match sat hillshade
                 u_light: [-0.375, 0.000, -0.530] # lights are flipped to match sat hillshade
